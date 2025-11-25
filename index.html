@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hasan Mini Blog</title>
+		<link rel="stylesheet" href="miniBlog.css">
+
+	</head>
+	<body>
+		<div id="menuBox" class="box">
+			<h2>Hasan Mini Blog</h2>
+			<button onclick="signup()">SignUp</button>
+			<button onclick="loginNow()">LogIn</button>
+		</div>
+
+		<div id="signupBox" class="box hidden">
+			<h2>Join Hasan Mini Blog.</h2>
+			<input type="text" id="yourName" placeholder="Enter your name">
+			<input type="email" id="yourEmail" placeholder="Enter your email">
+			<input type="text" id="yourUsername" placeholder="Enter a unique username">
+			<input type="password" id="yourPassword" placeholder="Enter password">
+			<input type="password" id="confirmYourPassword" placeholder="Confirm your password">
+
+			<button onclick="openAccount()">Open new account</button>
+
+			<button onclick="mainMenu()">Back</button>
+		</div>
+
+		<div id="loginBox" class="box hidden">
+			<h2>Login to Your Account</h2>
+			<input type="text" id="loginUsername" placeholder="Enter username">
+			<input type="password" id="loginPassword" placeholder="Enter password">
+
+			<button onclick="login()">Login</button>
+
+			<button onclick="mainMenu()">Back</button>
+			
+		</div>
+
+		<div id="usermenuBox" class="box hidden">
+			<h2>My menu</h2>
+			<button onclick="myProfile()">My profile</button>
+			<button onclick="postNow()">Share your story</button>
+			<button onclick="myPosts()">Post history</button>
+			<button onclick="newsFeed()">News feed</button>
+			<button onclick="logout()">LogOut</button>
+		</div>
+
+		<div id="myProfileBox" class="box hidden">
+			<h2>My profile</h2>
+			<div id="myProfileOutput"></div>
+
+			<button onclick="editProfile()">Edit profile</button>
+
+			<button onclick="userMenu()">Back to menu</button>
+			
+		</div>
+
+		<div id="editProfileBox" class="box hidden">
+			<button onclick="editName()">Edit name</button>
+			<button onclick="editEmail()">Edit email</button>
+			<button onclick="editPassword()">Edit password</button>
+			<button onclick="userMenu()">Back to menu</button>
+
+		</div>
+
+		<div id="editNameBox" class="box hidden">
+			<h2>Update your name</h2>
+			<input type="text" id="newName" placeholder="Enter new name">
+			<button onclick="updateName()">Update name</button>
+			<button onclick="userMenu()">Back to menu</button>
+
+
+		</div>
+
+		<div id="editEmailBox" class="box hidden">
+			<h2>Update your email</h2>
+			<input type="email" id="newEmail" placeholder="Enter new email">
+			<button onclick="updateEmail()">Update email</button>
+			<button onclick="userMenu()">Back to menu</button>
+
+		</div>
+
+		<div id="editPasswordBox" class="box hidden">
+			<h2>Update your password</h2>
+			<input type="password" id="newPassword" placeholder="Enter new password">
+			<input type="password" id="confirmNewPassword" placeholder="Confirm new password">
+
+			<button onclick="updatePassword()">Update password</button>
+			<button onclick="userMenu()">Back to menu</button>
+
+		</div>
+
+		<div id="postBox" class="box hidden">
+			<p>Whats on your mind....</p>
+			<input type="text" id="postTitle" placeholder="Enter title">
+			<textarea id="postContent" placeholder="Share your ideas...."></textarea>
+
+			<button onclick="post()">Share</button>
+
+			<button onclick="userMenu()">Back to menu</button>
+
+
+		</div>
+
+		<div id="myPostsBox" class="box hidden">
+			<h2>My posts</h2>
+			<div id="myPostsOutput"></div>
+
+			<button onclick="userMenu()">Back to menu</button>
+
+
+		</div>
+
+		<div id="feedBox" class="box hidden">
+			<button onclick="userMenu()">Back to menu</button>
+			<h2>News feed</h2>
+			<div id="feedOutput"></div>
+
+		</div>
+
+		<script src="miniBlog.js"></script> 
+
+	</body>
+</html>
